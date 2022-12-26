@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="bg">
+    <div class="form-box">
+      <main>
+        <h1>Estimate of your Budget</h1>
+        <form action="" class="calculator">
+          <span>
+            <label for="Area">Construction area:</label>
+            <br>
+            <input type="text" id="area" placeholder="In sq ft">
+            <br>
+            <label for="Floor">No. of Floors:</label>
+            <br>
+            <select name="structure" id="floor" required="" onchange="getArea()">
+              <option value="null" selected="true" disabled="disabled">select no. of floors</option>
+              <option value="1" id="ground">Only ground floor</option>
+              <option value="2">G+1</option>
+              <option value="3">G+2</option>
+              <option value="4">G+3</option>
+              <option value="5">G+4</option>
+            </select>
+            <br>
+            <br>
+            <input type="number" id="totalarea" placeholder="Total area">
+            <br>
+          </span>
+          <br>
+          <h1 id="res">Costumize your Budget</h1>
+          <form action="" class="material">
+            <div>
+              <label for="Steel">Steel Brand</label>
+              <br>
+              <select name="steel" id="steel" onchange="total()">
+                <option value="">Select</option>
+                <option value="0.8235">ANY ISI APPROVED</option>
+                <option value="1">JINDAL PANTHER</option>
+                <option value="1.1176">TATA TISCON</option>
+              </select>
+              <div>
+                <label for="cement">Cement Brand</label>
+                <br>
+                <select name="cement" id="cement" onchange="total()">
+                  <option value="">Select</option>
+                  <option value="0.8235">ANY ISI APPROVED</option>
+                  <option value="1">HPC</option>
+                  <option value="1.1176">ACC</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="tiles">Tiles</label>
+              <br>
+              <select name="tiles" id="tiles" onchange="total()">
+                <option value="">Select</option>
+                <option value="80">80/sq ft</option>
+                <option value="1">120/sq ft</option>
+                <option value="160">160/sq ft</option>
+              </select>
+              <div>
+                <label for="electric">Electrical</label>
+                <br>
+                <select name="electric" id="electric" onchange="total()">
+                  <option value="">Select</option>
+                  <option value="0.8235">ANY ISI APPROVED</option>
+                  <option value="1">JINDAL PANTHER</option>
+                  <option value="1.1176">TATA TISCON</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="Plumbing">Plumbing</label>
+              <br>
+              <select name="Plumbing" id="plumbing" onchange="total()">
+                <option value="">Select</option>
+                <option value="91">91/sqft</option>
+                <option value="1"></option>
+                <option value="1.1176"></option>
+              </select>
+              <div>
+                <label for="Internal paint">Internal Painting</label>
+                <br>
+                <select name="Internal" id="innerpaint" onchange="total()">
+                  <option value="">Select</option>
+                  <option value="0.8235">24</option>
+                  <option value="1">554</option>
+                  <option value="1.1176">456</option>
+                </select>
+              </div>
+              <div>
+                <label for="Exterior paint">Exterior Painting</label>
+                <br>
+                <select name="Exterior" id="exteriorpaint" onchange="total()">
+                  <option value="">Select</option>
+                  <option value="91">91/sqft</option>
+                  <option value="1">456</option>
+                  <option value="1.1176">756</option>
+                </select>
+                <div>
+                  <label for="Door">Door</label>
+                  <br>
+                  <select name="Door" id="door" onchange="total()">
+                    <option value="">Select</option>
+                    <option value="0.8235">gh</option>
+                    <option value="1">dfh</option>
+                    <option value="1.1176">dfh</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="Window">Window</label>
+                  <br>
+                  <select name="Window" id="window" class="" onchange="total()">
+                    <option value="">Select</option>
+                    <option value="0.8235">gh</option>
+                    <option value="1">dfh</option>
+                    <option value="1.1176">dfh</option>
+                  </select>
+                </div>
+              </div>
+              <br>
+              <label for="submit"></label>
+              <input type="submit" value="Submit now" id="submit">
+            </div>
+            <br>
+            <input type="number" id="totalcost" value="" readonly placeholder="Total cost">
+          </form>
+      </main>
+    </div>
+  </div>
+  <a href="http://127.0.0.1:5500/material.html">click here
+  </a>
+  <script src="src.js"></script>
+</body>
+
+</html>
